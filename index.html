@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edward Dume | Portfolio</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00d4ff;
+      margin-top: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #00d4ff;
+      object-fit: cover;
+      animation: fadeIn 2s ease-in-out, float 3s ease-in-out infinite;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #ffdd57;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 15px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .project-card h3 {
+      margin-bottom: 1rem;
+      color: #00d4ff;
+    }
+
+    /* Reviews */
+    .reviews {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .review {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1.5rem;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .review p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .review h4 {
+      color: #ffdd57;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://edwardmys3staticwebbucket2025.s3.us-east-1.amazonaws.com/profile.png" alt="Edward Dume" class="profile-img">
+    <h1>Edward Dume</h1>
+    <p>Cloud | DevOps | Web Development Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Hotel Booking Website</h3>
+        <p>A Django-powered hotel website with room reservations, payments, and calendar availability.</p>
+      </div>
+      <div class="project-card">
+        <h3>Terraform AWS Setup</h3>
+        <p>Infrastructure as Code project to deploy an AWS EC2 instance with automated provisioning.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio built with HTML, CSS, and animations to showcase skills.</p>
+      </div>
+      <div class="project-card">
+        <h3>Poultry Project Planner</h3>
+        <p>A small-scale layers poultry viability project with budgeting tools for farmers in Kwale.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Reviews</h2>
+    <div class="reviews">
+      <div class="review">
+        <p>"Edward is very detail-oriented and delivers clean, scalable solutions."</p>
+        <h4>- James, Software Engineer</h4>
+      </div>
+      <div class="review">
+        <p>"His portfolio projects are practical and show real-world skills in DevOps."</p>
+        <h4>- Sarah, Cloud Architect</h4>
+      </div>
+      <div class="review">
+        <p>"I was impressed with the hotel booking system he built using Django."</p>
+        <h4>- Michael, Tech Lead</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Edward Dume | Designed with ❤️ and code</p>
+  </footer>
+</body>
+</html>

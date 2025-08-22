@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error | Edward Dume</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0;
+      color: #ff4757;
+      animation: pulse 2s infinite;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 10px 0;
+      color: #ffdd57;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00d4ff;
+      color: #141e30;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    a:hover {
+      background: #00aacc;
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <h2>Oops! Page Not Found</h2>
+  <p>Sorry, the page you are looking for doesn’t exist or has been moved.</p>
+  <a href="index.html">Go Back Home</a>
+</body>
+</html>
