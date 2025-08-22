@@ -1,4 +1,4 @@
-# Portfolio Website on AWS S3 with Terraform
+# Static Website on AWS S3 with Terraform
 
 This project hosts my personal **portfolio website** (HTML/CSS) on **Amazon S3**, with all infrastructure managed using **Terraform**.
 
@@ -44,10 +44,10 @@ This project hosts my personal **portfolio website** (HTML/CSS) on **Amazon S3**
 5. **Access Your Site**
    Terraform will output the S3 website endpoint
 
-   http://<bucket-name>.s3-website-<region>.amazonaws.com
+  e.g.  http://<bucket-name>.s3-website-<region>.amazonaws.com
 
    
-##  Destroy Infrastructure
+6. **Destroy Infrastructure**
     
     terraform destroy -auto-approve
 
@@ -56,3 +56,4 @@ This project hosts my personal **portfolio website** (HTML/CSS) on **Amazon S3**
 - 📩 [Email](mailto:edwarddume55@gmail.com)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/edward-dume)  
 - 💻 [GitHub](https://github.com/edwarddume55)  
+
